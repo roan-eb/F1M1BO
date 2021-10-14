@@ -4,7 +4,7 @@
 
 ### Wat wil ik ga doen
 
-Ik wil een verhaal over een vluchteling gaan maken die verschillende keuzes moet maken. Dit word een zelfbedacht verhaal gebaseerde op verhalen die ik heb gelezen om het internet.
+Ik wil een verhaal over een vluchteling gaan maken die verschillende keuzes moet maken. Dit word een zelfbedacht verhaal gebaseerd op waargebeurde verhalen die ik op het internet gelezen heb.
 
 ### Uitwerking 
 
