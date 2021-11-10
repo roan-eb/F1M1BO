@@ -62,11 +62,11 @@ def vraag4():
     v2 = input ()
     v2_2=v2.upper()
     if v2_2 == "A":
-        print("\nJe hebt eten gevonden, maar nog steeds geen onderdak.")
-        vraag16()
+        print("\nWaar ga je eten zoeken?")
+        vraag17()
     elif v2_2 == "B":
-        print("\nJe hebt onderdak gevonden. Heel goed!")
-        vraag18() 
+        print("\nWaar wil je onderdak zoeken?")
+        vraag16() 
     else:
         print("\nKies A of B\n")
 
@@ -271,15 +271,15 @@ def vraag15():
         print(vraag15())
 
 def vraag16():
-    print("\nWaar wil je onderdak zoeken? Bij een asielzoekerscentrum of bij iemand?\n(Asielzoekerscentrum/Bij iemand)")
+    print("\nBij een asielzoekerscentrum of bij iemand?\n(Asielzoekerscentrum/Bij iemand)")
     print("A = Asielzoekerscentrum")
     print("B = Bij iemand")
 
     v2 = input ()
     v2_2=v2.upper()
     if v2_2 == "A":
-        print("\n")
-        vraag17()
+        print("\nJe hebt onderdak gevraagd bij een asielzoekerscentrum ze zijn bereid je te helpen met een woning vinden en een nieuwe baan om je leven weer opnieuw op te bouwen. Goed gedaan!")
+        einde()
     elif v2_2 == "B":
         print("\nJe hebt bij iemand aangeklopt.")
         vraag19() 
@@ -289,36 +289,36 @@ def vraag16():
         print(vraag16())
 
 def vraag17():
-    print("\n   \n(/)")
-    print("A = ")
-    print("B = ")
+    print("\nBij een bakker of supermarkt.\n(Bakker/Supermarkt)")
+    print("A = Bakker")
+    print("B = Supermarkt")
 
     v2 = input ()
     v2_2=v2.upper()
     if v2_2 == "A":
-        print("\n")
-        vraag17()
+        print("\nJe hebt besloten om bij een bakker eten te zoeken, de bakker heeft medelijden en geeft je een heel brood.")
+        vraag22()
     elif v2_2 == "B":
-        print("\n")
-        vraag4() 
+        print("\nDe supermarkt toont totaal geen medelijden en schopt je uit de winkel..")
+        vraag17() 
     else:
         print("\nKies A of B\n")
 
         print(vraag17())
 
 def vraag18():
-    print("\nMaar je begint honger te krijgen \n(/)")
-    print("A = ")
-    print("B = ")
+    print("\nJe gaat weer verder met je tocht, onderweg kom je een gezin tegen die ook gevlucht is uit Syrië. Wil je samen of alleen verder? \n(Samen/Alleen)")
+    print("A = Samen")
+    print("B = Alleen")
 
     v2 = input ()
     v2_2=v2.upper()
     if v2_2 == "A":
-        print("\n")
-        vraag17()
+        print("\nJe sluit je bij hun aan en je zoekt samen voor hulp. Je bouwt een sterke band op met de familie. Heel goed!")
+        einde()
     elif v2_2 == "B":
-        print("\n")
-        vraag4() 
+        print("\nJe gaat alleen verder en splits op je verdwaald en komt om van de honger en dorst.")
+        dood() 
     else:
         print("\nKies A of B\n")
 
@@ -361,22 +361,40 @@ def vraag20():
         print(vraag20())
 
 def vraag21():
-    print("\nDe volgende ochtend bedank je de mensen en trek je verder... \n(/)")
-    print("A = ")
-    print("B = ")
+    print("\nDe volgende ochtend bedank je de mensen en trek je verder. Je komt een meer tegen, je hebt erge dorst vanwege het warme weer. Wil je drinken of niet?\n(Ja/Nee)")
+    print("A = Ja")
+    print("B = Nee")
 
     v2 = input ()
     v2_2=v2.upper()
     if v2_2 == "A":
-        print("\n")
-        einde()
+        print("\nJe hebt ervoor gekozen te drinken en daardoor je eigen leven gered.")
+        vraag18()
     elif v2_2 == "B":
-        print("\n")
-        vraag21() 
+        print("\nJe hebt ervoor gekozen om het water toch niet te drinken, dit was geen slimme keuze je komt om door uitdroging.")
+        dood() 
     else:
         print("\nKies A of B\n")
 
         print(vraag21())
+
+def vraag22():
+    print("\nNu je eten hebt moet je nog onderdak zoeken. Vraag je het aan de bakker of ga je naar een asielzoekerscentrum?\n(Bij de bakker/Asielzoekerscentrum)")
+    print("A = Bij de bakker")
+    print("B = Asielzoekerscentrum")
+
+    v2 = input ()
+    v2_2=v2.upper()
+    if v2_2 == "A":
+        print("\nDe bakker heeft dat liever niet, helaas.")
+        vraag22()
+    elif v2_2 == "B":
+        print("\nJe hebt onderdak gevraagd bij een asielzoekerscentrum ze zijn bereid je te helpen met een woning vinden en een nieuwe baan om je leven weer opnieuw op te bouwen. Goed gedaan!")
+        einde() 
+    else:
+        print("\nKies A of B\n")
+
+        print(vraag22())
 
 def dood():
     restart=input("Opniew spelen? ja/nee\n")
